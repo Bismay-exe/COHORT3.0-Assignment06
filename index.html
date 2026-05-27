@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Leaves and a Bud</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        figtree: ['Figtree', 'sans-serif'],
+                        reckless: ['Reckless', 'serif'],
+                        robotomono: ['Roboto Mono', 'monospace'],
+                        midnight: ['Midnight', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#FBF9EB]">
+    <div
+        class="bg-[#2A2857] text-white text-center py-2 text-xs font-robotomono font-medium tracking-wider relative z-50">
+        FREE SHIPPING ON ORDERS OVER $50
+    </div>
+
+    <nav id="my-navbar"
+        class="fixed z-40 transition-all duration-300 flex justify-between items-center bg-[#f9f8f4] shadow-lg border border-black top-14 left-6 right-6 rounded-xl px-8 py-4">
+        <div class="left flex gap-6 font-figtree text-sm font-semibold tracking-wide">
+            <a href="#" class="hover:text-[#2c4021] transition">Shop</a>
+            <a href="#" class="hover:text-[#2c4021] transition">Learn</a>
+            <a href="#" class="hover:text-[#2c4021] transition">Reviews</a>
+        </div>
+
+        <div class="center-logo text-3xl font-reckless font-bold text-[#2c4021] cursor-pointer">
+            two leaves and a bud
+        </div>
+
+        <div class="right-stuff flex gap-5 text-xl">
+            <i class="ri-search-line cursor-pointer hover:text-[#2c4021]"></i>
+            <i class="ri-user-line cursor-pointer hover:text-[#2c4021]"></i>
+            <i class="ri-shopping-bag-line cursor-pointer hover:text-[#2c4021]"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section
+            class="relative w-full h-[95vh] flex items-end justify-start bg-[#e4e9d8] border-b border-black overflow-hidden pt-32">
+            <img src="https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=720" alt=""
+                class="absolute inset-0 w-full h-full object-cover">
+
+            <div class="hero-text-stuff relative z-10 text-left flex flex-col items-start pl-10 pb-10 slide-up">
+                <h1 class="big-title text-8xl font-reckless text-[#FBF9EB] mb-4">A cup that fits<br />the moment.</h1>
+                <p class="small-title font-figtree text-2xl text-[#FBF9EB] mb-8 max-w-md">Organic, whole leaf tea in
+                    completely compostable sachets.</p>
+                <button
+                    class="bg-[#2A2857] text-white text-xl px-14 py-3 rounded-full font-figtree tracking-wider hover:bg-black transition-all hover-scale">Shop
+                    Now</button>
+            </div>
+        </section>
+        <section class="relative w-full h-[40vh] flex items-center justify-center">
+            <div class="hero-text-stuff relative z-10 text-center flex flex-col items-center slide-up">
+                <h1 class="big-title text-7xl font-reckless text-[#201C1A] mb-4">A <span class="text-italic">great</span> cup starts with a careful<br/>pluck - the top two leaves and a bud.</h1>
+            </div>
+
+
+        </section>
+
+        <section class="px-8 py-20">
+            <h2 class="middle-text text-4xl font-reckless text-center text-[#2c4021] mb-12">Shop Best Sellers</h2>
+
+            <div class="flex gap-6">
+                <div class="max-w-xs flex flex-col gap-4">
+                    <div class="w-full h-90 p-3 flex flex-col justify-between bg-[#C1EE91] border border-black rounded-lg">
+                        <div class="flex justify-between items-start">
+                            <div class="px-2 py-1 bg-white text-2xl font-midnight font-semibold uppercase rounded-md border border-black">Tea Sachets</div>
+                            <div class="font-figtree">+ 4.71 (84)</div>
+                        </div>
+                        <div class="flex justify-end items-end">
+                            <div class="w-15 h-15 flex justify-center items-center text-center bg-white text-2xl font-midnight font-semibold uppercase rounded-md border border-black">
+                                <span>+</span>
+                                Add</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1 class="text-2xl">Organic Tropical Green Tea</h1>
+                    </div>
+
+                    <div class="text-sm font-figtree pr-2">
+                        <h3 class="pb-2">From $11.95</h3>
+                        <h4>Our Organic Tropical Green is a fruity and fun take on a classic green tea</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner-thing bg-[#2c4021] text-white py-24 px-8 text-center flex flex-col items-center">
+            <h2 class="font-reckless text-5xl mb-6">Why Two Leaves?</h2>
+            <p class="font-figtree max-w-2xl text-lg mb-10 opacity-90 leading-relaxed">We go straight to the tea
+                gardens
+                to bring you the highest quality organic tea. No mystery dust, just whole leaves, herbs, and spices.
+            </p>
+            <button
+                class="bg-white text-[#2c4021] px-10 py-4 rounded-full font-figtree font-bold tracking-wide hover:bg-gray-200 transition">LEARN
+                MORE</button>
+        </section>
+
+        <footer class="bottom-area bg-[#1a2613] text-white pt-20 pb-10 px-8">
+        </footer>
+        <script>
+            const nav = document.getElementById('my-navbar');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    nav.classList.remove('top-14', 'left-6', 'right-6', 'rounded-xl', 'border');
+                    nav.classList.add('top-0', 'left-0', 'right-0', 'border-b');
+                } else {
+                    nav.classList.add('top-14', 'left-6', 'right-6', 'rounded-xl', 'border');
+                    nav.classList.remove('top-0', 'left-0', 'right-0', 'border-b');
+                }
+            });
+        </script>
+</body>
+
+</html>

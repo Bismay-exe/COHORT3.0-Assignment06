@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Reckless';
+    src: url('./assets/fonts/Reckless.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('./assets/fonts/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('./assets/fonts/RobotoMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Midnight';
+    src: url('./assets/fonts/midnight-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Midnight';
+    src: url('./assets/fonts/midnight-semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --font-figtree: 'Figtree', sans-serif;
+    --font-reckless: 'Reckless', serif;
+    --font-roboto-mono: 'Roboto Mono', monospace;
+    --font-midnight: 'Midnight', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: var(--font-reckless);
+}
