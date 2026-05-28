@@ -461,7 +461,7 @@
         <!-- Our Origins Section -->
         <section
             class="bg-[url('https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1600')] bg-cover bg-center relative w-full h-full md:h-[200vh] py-20 md:py-32 px-6 border-b-2 border-black">
-            <div class="absolute -top-20 right-12 z-10">
+            <div class="absolute -top-15 md:-top-20 right-6 md:right-12 z-10">
                 <img src="https://www.twoleavestea.com/cdn/shop/files/From_farm_to_kettle_c340e18e-6549-4712-b2b1-b64a827e6338.svg?v=1773116502&width=300.0"
                     alt="" class="h-30 w-30 md:h-40 md:w-40">
             </div>
@@ -513,7 +513,7 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section class="w-full py-20 md:py-28 px-6 border-b-2 border-black flex flex-col items-center">
+        <section class="w-full py-20 md:py-28 px-6 flex flex-col items-center">
             <div class="max-w-5xl w-full flex flex-col justify-start items-start">
                 <div class="mb-6">
                     <div
@@ -634,33 +634,27 @@
         </section>
 
         <!-- Cafe & Wholesale Partners -->
-        <section class="relative w-full py-20 md:py-28 px-6 border-b-2 border-black overflow-hidden bg-cream">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-10 items-center">
-                    <div class="rounded-2xl overflow-hidden border border-black">
-                        <img src="https://www.twoleavestea.com/cdn/shop/files/Cafes_and_Partners_Hero_-rescaled.webp?v=1773752916&width=700"
-                            alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <div
-                            class="inline-block px-4 py-1.5 bg-[#ffb500] text-black text-xs font-robotomono uppercase tracking-wider rounded-full mb-6 rotate-[1deg]">
-                            Partners</div>
-                        <h2 class="font-reckless text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.08] text-black mb-6">Our
-                            Cafe
-                            &amp;<br>Wholesale Partners</h2>
-                        <p class="font-figtree text-lg leading-relaxed text-black/70 mb-8 max-w-lg">From local cafés to
-                            national
-                            chains, our teas power thousands of baristas every day.</p>
-                        <a href="#"
-                            class="inline-block bg-[#2a2857] text-white px-10 py-3.5 rounded-full font-figtree text-lg hover:bg-black transition-all">Learn
-                            More</a>
-                    </div>
-                </div>
+        <section class="w-screen grid grid-cols-1 md:grid-cols-2 border-y border-black overflow-hidden">
+            <div class="w-full aspect-square md:aspect-normal">
+                <img src="https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=2700" alt=""
+                class="h-full object-cover w-full">
+            </div>
+            <div class="w-full aspect-square md:aspect-normal bg-[#2A2857] text-center md:text-left flex flex-col justify-center items-center md:items-start gap-2 md:gap-4 px-8 md:px-12">
+                <h1 class="font-reckless text-[clamp(3rem,8vw,5.25rem)] leading-[1.05] text-[#fffaf6] mb-4">Our Cafe &<br>Wholesale Partners</h1>
+                <p class="font-figtree text-xl md:text-2xl text-[#fffaf6]/90 mb-8 max-w-lg">From local cafés to national chains, our teas power thousandas of baristas everyday.</p>
+                <a href="#"
+                    class="inline-block hover:bg-[#2a2857] hover:text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black bg-white text-black transition-all duration-300 ease">
+                    Learn More
+                </a>
             </div>
         </section>
 
         <!-- Lattes Section -->
-        <section class="w-full py-20 md:py-28 px-6 border-b-2 border-black bg-cream">
+        <section class="relative bg-[#9F6429] w-full py-20 md:py-28 px-6 border-b-2 border-black">
+            <div class="absolute -top-15 md:-top-20 right-6 md:right-12 z-10">
+                <img src="https://www.twoleavestea.com/cdn/shop/files/designed_for_ease.svg?v=1773116538&width=300"
+                    alt="" class="h-30 w-30 md:h-40 md:w-40">
+            </div>
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-14">
                     <div
@@ -945,14 +939,10 @@
         const nav = document.getElementById('my-navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 40) {
-                nav.classList.remove('top-12', 'left-6', 'right-6', 'rounded-xl');
-                nav.style.border = 'none';
-                nav.style.boxShadow = 'none';
+                nav.classList.remove('top-12', 'left-6', 'right-6', 'rounded-xl', 'border');
                 nav.classList.add('top-0', 'left-0', 'right-0', 'border-b');
             } else {
-                nav.classList.add('top-12', 'left-6', 'right-6', 'rounded-xl');
-                nav.style.border = '';
-                nav.style.boxShadow = '';
+                nav.classList.add('top-12', 'left-6', 'right-6', 'rounded-xl', 'border');
                 nav.classList.remove('top-0', 'left-0', 'right-0', 'border-b');
             }
         });
