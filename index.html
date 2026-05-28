@@ -28,7 +28,7 @@
 <body class="bg-[#FBF9EB]">
     <div
         class="bg-[#2a2857] text-[#fffaf6] text-center py-2 text-xs font-robotomono font-medium tracking-wider relative z-50 uppercase">
-        Free shipping on orders over $50
+        Free US shipping on orders over $75
     </div>
 
     <nav id="my-navbar"
@@ -58,53 +58,78 @@
         </div>
         <div class="flex gap-6 text-xl text-black uppercase flex-1 justify-end items-center">
             <a href="#" class="hidden md:block text-xs font-robotomono tracking-wider underline-effect">My Account</a>
-            <a href="#" class="hidden md:block text-xs font-robotomono tracking-wider underline-effect">Cafe & Wholesale Partners</a>
+            <a href="#" class="hidden md:block text-xs font-robotomono tracking-wider underline-effect">Cafe & Wholesale
+                Partners</a>
             <a href="#" class="hidden md:block text-xs font-robotomono tracking-wider underline-effect">Tea Journals</a>
             <a href="#" class="text-xl flex justify-center items-center relative">
                 <img src="./assets/svgs/bag.svg" alt="" class="w-8 h-8 object-contain">
-                <span class="text-sm absolute -right-1 p-1 bg-[#FFB500] w-5 h-5 rounded-full border border-black flex justify-center items-center">0</span>
+                <span
+                    class="text-sm absolute -right-1 p-1 bg-[#FFB500] w-5 h-5 rounded-full border border-black flex justify-center items-center">0</span>
             </a>
         </div>
     </nav>
 
     <main class="overflow-hidden">
 
-        <!-- Hero Section -->
         <section
-            class="relative w-full min-h-screen border-b-2 border-black flex items-end justify-start overflow-hidden">
+            class="relative w-full h-full min-h-[80vh] border-b-2 border-black flex items-end justify-start overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30 z-[1]"></div>
             <img src="https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=1440" alt=""
-                class="absolute inset-0 w-full h-full object-cover">
-            <div class="relative z-10 text-left flex flex-col items-start px-8 pb-16 md:pb-24 md:px-12 max-w-4xl">
-                <h1 class="font-reckless text-[clamp(3rem,8vw,5.25rem)] leading-[1.05] text-[#fffaf6] mb-4">A cup that
+                class="hidden md:block absolute inset-0 w-full h-full object-cover">
+            <img src="https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1350.0"
+                alt="" class="md:hidden absolute inset-0 w-full h-full object-cover">
+            <div
+                class="relative z-10 text-left flex flex-col items-center md:items-start px-4 pb-10 md:pb-12 md:px-10 max-w-4xl">
+                <h1
+                    class="text-[clamp(3.8rem,8vw,5.25rem)] leading-[1.05] text-[#fffaf6] text-center md:text-left mb-4">
+                    A cup that
                     fits<br>the moment.</h1>
-                <p class="font-figtree text-xl md:text-2xl text-[#fffaf6]/90 mb-8 max-w-lg">Organic, whole leaf tea in
-                    completely compostable sachets.</p>
+                <p
+                    class="font-figtree text-[clamp(1.125rem,2vw,1.25rem)] leading-[1.2] text-[#fffaf6] text-center md:text-left text-[#fffaf6]/90 mb-8 max-w-xl">
+                    From compostable whole leaf tea sachets and iced tea to tea lattes and matcha, we’ve got something
+                    for everyone.</p>
                 <a href="#"
-                    class="inline-block bg-[#2a2857] text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black hover:bg-white hover:text-black transition-all duration-300 ease">
+                    class="inline-block w-full md:w-auto flex justify-center bg-[#2a2857] text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black hover:bg-white hover:text-black transition-all duration-300 ease">
                     Shop Now
                 </a>
             </div>
         </section>
 
-        <section class="w-full py-24 md:py-32 px-6">
+        <section class="relative w-full pt-24 pb-4 md:pt-32 md:pb-32 px-5">
+            <div class="absolute -top-6 md:-top-8 right-6 md:right-12 z-10">
+                <img src="./assets/svgs/arrow-down.svg" class="h-12 w-12 md:h-16 md:w-16">
+            </div>
             <div class="max-w-5xl mx-auto text-center">
-                <h2 class="font-reckless text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.08] text-black">
+                <h2 class="font-reckless text-[clamp(2rem,6vw,4.5rem)] leading-[1.08] text-black">
                     A <span class="italic">great</span> cup starts with a careful<br class="hidden md:block"> pluck —
                     the top two leaves and a bud.
                 </h2>
             </div>
         </section>
 
-        <section class="w-full py-16 md:py-32 border-b-2 border-black">
-            <div class="text-center mb-20">
-                <div
-                    class="inline-block text-4xl md:text-6xl font-midnight font-semibold text-black uppercase px-1 border border-black rounded-md bg-[#DAAEEA] -rotate-1">
-                    Best sellers</div>
+        <section class="relative w-full py-16 md:py-32 border-b-2 border-black">
+            <div
+                class="absolute top-75 md:top-[41%] left-2 md:left-16 h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center z-50">
+                <img src="./assets/svgs/left-arrow.svg" alt=""
+                    class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
             </div>
 
-            <div class="flex gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth">
-                <div class="flex flex-col gap-[0.75rem] w-[300px] flex-shrink-0 ml-12">
+            <div
+                class="absolute top-75 md:top-[41%] right-2 md:right-16 h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center z-50">
+                <img src="./assets/svgs/right-arrow.svg" alt=""
+                    class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
+            </div>
+
+            <div class="text-left md:text-center px-5 md:px-0 mb-10 md:mb-20">
+                <div
+                    class="inline-block text-4xl md:text-6xl font-midnight font-semibold text-black uppercase px-1 border border-black rounded-md bg-[#DAAEEA] -rotate-1">
+                    Best sellers
+                </div>
+            </div>
+
+            <div class="relative flex gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth">
+
+                <div class="flex flex-col gap-[0.75rem] w-[300px] flex-shrink-0 ml-5 md:ml-12">
                     <div
                         class="relative bg-[#C1EE91] flex flex-col justify-between rounded-xl border border-black overflow-hidden w-[300px] h-[350px] p-3">
                         <img src="https://www.twoleavestea.com/cdn/shop/files/organic_tropical_green_tea_sachet_featured.webp?v=1771579242&width=480"
@@ -375,7 +400,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-[0.75rem] w-[300px] flex-shrink-0 mr-12">
+                <div class="flex flex-col gap-[0.75rem] w-[300px] flex-shrink-0 mr-5 md:mr-12">
                     <div
                         class="relative bg-[#AEE0F9] flex flex-col justify-between rounded-xl border border-black overflow-hidden w-75 h-85 p-3">
                         <img src="https://www.twoleavestea.com/cdn/shop/files/alpine_berry_naked_featured.webp?v=1771496640&width=480"
@@ -413,7 +438,7 @@
 
             </div>
 
-            <div class="text-center mt-12">
+            <div class="text-center mt-12 pb-5 md:pb-0">
                 <a href="#"
                     class="inline-block bg-[#2a2857] text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black hover:bg-white hover:text-black transition-all duration-300 ease">
                     Explore All Teas
@@ -421,8 +446,7 @@
             </div>
         </section>
 
-        <!-- Discover / Search Section -->
-        <section class="w-full py-28 px-6 border-b-2 border-black bg-cream">
+        <section class="w-full py-16 md:py-28 px-6 border-b-2 border-black bg-cream">
             <div class="max-w-5xl mx-auto">
                 <div class="mb-6">
                     <div
@@ -430,51 +454,63 @@
                         Discover
                     </div>
                 </div>
-                <h2 class="text-[clamp(2rem,5vw,3.75rem)] leading-[1.1] text-black mb-4">Let's find a cup that fits the
+                <h2 class="text-[clamp(2rem,5vw,3.75rem)] leading-[1.1] text-black mb-6">Let's find a cup that fits the
                     <span class="italic">moment</span>.<br>What are you searching for?
                 </h2>
                 <div class="mt-10 mx-auto">
                     <input type="text" placeholder="herbal tea"
-                        class="max-w-100 w-full border border-black rounded-2xl py-5 px-8 bg-transparent text-3xl outline-none focus:border-[#2a2857] transition">
+                        class="max-w-100 w-full border border-black rounded-xl py-6 px-8 bg-transparent text-3xl outline-none focus:border-[#2a2857] transition">
                 </div>
-                <p class="font-figtree text-md uppercase text-black/60 mt-28 mb-4">Or explore by vibe...
+                <p class="font-figtree text-md uppercase text-black/60 mt-8 md:mt-28 mb-5">Or explore by vibe...
                 </p>
                 <div class="flex flex-wrap gap-2">
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">A
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">A
                         Sweet Treat</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Evening
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Evening
                         Unwind</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Focused
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Focused
                         &amp; Clear</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Caffeine-Free</span>
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Caffeine</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Ceremony-Worthy</span>
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Caffeine-Free</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Whole
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Ceremony-Worthy</span>
+                    <span
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Whole
                         Leaf</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Over
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Over
                         Ice</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Lattes</span>
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Lattes</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Herbal
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Black
                         Tea</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Calm
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Green
+                        Tea</span>
+                    <span
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Herbal
+                        Tea</span>
+                    <span
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Organic</span>
+                    <span
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Barista
+                        Favourite</span>
+                    <span
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Calm
                         &amp; Cozy</span>
                     <span
-                        class="px-4 py-1.5 border border-black rounded-xl text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Fruit
+                        class="px-4 py-1.5 border border-black rounded-xl text-3xl md:text-4xl cursor-pointer bg-[#DAEAFF] hover:bg-[#A2C9FC] transition-all duration-300 ease">Fruit
                         Forward</span>
                 </div>
             </div>
         </section>
 
-        <!-- Our Origins Section -->
         <section
             class="bg-[url('https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1600')] bg-cover bg-center relative w-full h-full md:h-[200vh] py-20 md:py-32 px-6 border-b-2 border-black">
             <div class="absolute -top-15 md:-top-20 right-6 md:right-12 z-10">
@@ -482,7 +518,7 @@
                     alt="" class="h-30 w-30 md:h-40 md:w-40">
             </div>
             <div
-                class="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-between items-center gap-10 text-white text-center">
+                class="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-between items-center gap-20 text-white text-center">
                 <div class="mb-6">
                     <div
                         class="inline-block text-4xl md:text-6xl font-midnight font-semibold text-black uppercase px-1 border border-black rounded-md bg-[#A2C9FC] -rotate-1">
@@ -492,61 +528,77 @@
                 <h2 class="font-midnight font-semibold uppercase text-[clamp(5rem,10vw,10rem)] leading-[0.8] mb-2">born
                     in<br>colorado
                 </h2>
-                <p class="text-[clamp(2rem,5vw,4rem)] leading-normal text-white mt-6">Our founder, Richard, started Two
-                    Leaves and a Bud in pursuit of a truly great cup. Two decades later, that same care and curiosity
-                    guide everything we make.</p>
-                <div class="mt-10 flex gap-2 md:gap-10">
-                    <div class="flex flex-col w-30 md:w-40 items-center gap-4">
+                <p class="text-[clamp(2rem,5vw,4rem)] leading-[1.2] text-white mt-6">
+                    Our founder, Richard, started Two Leaves and a Bud in pursuit of a truly great cup. Two decades
+                    later, that same care and curiosity guide everything we make.
+                </p>
+                <div class="mt-10 flex flex-wrap justify-center gap-5 md:gap-10">
+                    <div class="flex flex-col w-30 md:w-40 items-center gap-4 mb-5">
                         <img src="https://www.twoleavestea.com/cdn/shop/files/Quality_without_pretense.svg?v=1773116402&width=58"
                             alt="" class="w-25 h-25 mt-1">
                         <div>
-                            <h4 class="font-robotomono text-md text-center uppercase">Quality, Without Pretense
+                            <h4 class="font-robotomono text-sm md:text-md leading-[1.2] text-center uppercase">Quality,
+                                Without Pretense
                             </h4>
                         </div>
                     </div>
-                    <div class="flex flex-col w-30 md:w-40 items-center gap-4">
+                    <div class="flex flex-col w-30 md:w-40 items-center gap-4 mb-5">
                         <img src="https://www.twoleavestea.com/cdn/shop/files/care_for_ppl_1.svg?v=1773116330&width=57"
                             alt="" class="w-25 h-25 mt-1">
                         <div>
-                            <h4 class="font-robotomono text-md text-center uppercase">Care for People &amp;
+                            <h4 class="font-robotomono text-sm md:text-md leading-[1.2] text-center uppercase">Care for
+                                People &amp;
                                 Planet</h4>
                         </div>
                     </div>
-                    <div class="flex flex-col w-30 md:w-40 items-center gap-4">
+                    <div class="flex flex-col w-30 md:w-40 items-center gap-4 mb-5">
                         <img src="https://www.twoleavestea.com/cdn/shop/files/transparent_sourcing.svg?v=1773116421&width=48"
                             alt="" class="w-25 h-25 mt-1">
                         <div>
-                            <h4 class="font-robotomono text-md text-center uppercase">Transparent Sourcing</h4>
+                            <h4 class="font-robotomono text-sm md:text-md leading-[1.2] text-center uppercase">
+                                Transparent Sourcing</h4>
                         </div>
                     </div>
                 </div>
                 <a href="#"
-                    class="inline-block hover:bg-[#2a2857] hover:text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black bg-white text-black transition-all duration-300 ease">
+                    class="inline-block w-full md:w-auto hover:bg-[#2a2857] hover:text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black bg-white text-black transition-all duration-300 ease">
                     Our Story
                 </a>
 
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section class="w-full py-20 md:py-28 px-6 flex flex-col items-center">
-            <div class="max-w-5xl w-full flex flex-col justify-start items-start">
+        <section class="w-full py-20 md:py-28 flex flex-col items-center">
+            <div class="max-w-5xl w-full px-6 flex flex-col justify-start items-start">
                 <div class="mb-6">
                     <div
                         class="inline-block text-4xl md:text-6xl font-midnight font-semibold text-black uppercase px-1 border border-black rounded-md bg-[#73BC25] -rotate-1">
                         Reviews
                     </div>
                 </div>
-                <h2 class="text-[clamp(2rem,5vw,3.75rem)] leading-[1.1] text-black mb-4">Loved by tea people <span
-                        class="italic">everywhere</span>.<br>
-                    Here's what they're saying.</h2>
+                <h2 class="text-[clamp(2rem,5vw,3.75rem)] leading-[1.1] text-black mb-0 md:mb-4">Loved by tea people
+                    <span class="italic">everywhere</span>.<br>
+                    Here's what they're saying.
+                </h2>
             </div>
 
-            <div class="w-full py-16 md:py-32">
+            <div class="relative w-full pt-14 pb-0 md:pt-32">
+                <div
+                    class="absolute top-[50%] left-2 md:left-16 h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center z-50">
+                    <img src="./assets/svgs/left-arrow.svg" alt=""
+                        class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
+                </div>
 
-                <div class="flex gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth">
+                <div
+                    class="absolute top-[50%] right-2 md:right-16 h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center z-50">
+                    <img src="./assets/svgs/right-arrow.svg" alt=""
+                        class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
+                </div>
+
+                <div class="relative flex gap-5 overflow-x-auto scrollbar-hide">
+
                     <div
-                        class="bg-[#F5AF8A] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0 ml-12">
+                        class="bg-[#F5AF8A] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0 ml-5 ml-12">
                         <div class="relative] flex flex-col justify-center items-center gap-2 w-full h-[300px] p-3">
                             <p class="text-center text-[clamp(1.4rem,3vw,2rem)] leading-[1.1]">"The right amount of
                                 spice."</p>
@@ -566,7 +618,7 @@
                     </div>
 
                     <div
-                        class="bg-[#ABDF74] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0 ml-12">
+                        class="bg-[#ABDF74] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0">
                         <div class="relative flex flex-col justify-center items-center gap-2 w-full h-[300px] p-3">
                             <p class="text-center text-[clamp(1.4rem,3vw,2rem)] leading-[1.1]">"This drink is incredibly
                                 refreshing, especially when served over ice. It's light, crisp, and instantly cooling."
@@ -587,7 +639,7 @@
                     </div>
 
                     <div
-                        class="bg-[#FFD265] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0 ml-12">
+                        class="bg-[#FFD265] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0">
                         <div class="relative flex flex-col justify-center items-center gap-2 w-full h-[300px] p-3">
                             <p class="text-center text-[clamp(1.4rem,3vw,2rem)] leading-[1.1]">"One sip and you can feel
                                 the difference — clean energy, rich flavor. Literally liquid GOLD."</p>
@@ -607,7 +659,7 @@
                     </div>
 
                     <div
-                        class="bg-[#ADE674] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0 ml-12">
+                        class="bg-[#ADE674] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0">
                         <div class="relative flex flex-col justify-center items-center gap-2 w-full h-[300px] p-3">
                             <p class="text-center text-[clamp(1.4rem,3vw,2rem)] leading-[1.1]">"So tasty and
                                 energizing."</p>
@@ -627,7 +679,7 @@
                     </div>
 
                     <div
-                        class="bg-[#D9C2E1] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0 ml-12">
+                        class="bg-[#D9C2E1] flex flex-col w-[280px] h-full pt-10 pb-3.5 px-3.5 border border-black rounded-xl flex-shrink-0 mr-5 md:mr-12">
                         <div class="relative flex flex-col justify-center items-center gap-2 w-full h-[300px] p-3">
                             <p class="text-center text-[clamp(1.4rem,3vw,2rem)] leading-[1.1]">"The perfect start to my
                                 day."</p>
@@ -650,27 +702,26 @@
             </div>
         </section>
 
-        <!-- Cafe & Wholesale Partners -->
         <section class="w-screen grid grid-cols-1 md:grid-cols-2 border-y border-black overflow-hidden">
-            <div class="w-full aspect-square md:aspect-normal">
+            <div class="w-full h-full aspect-square md:aspect-normal">
                 <img src="https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=2700"
                     alt="" class="h-full object-cover w-full">
             </div>
             <div
-                class="w-full aspect-square md:aspect-normal bg-[#2A2857] text-center md:text-left flex flex-col justify-center items-center md:items-start gap-2 md:gap-4 px-8 md:px-12">
+                class="w-full aspect-square md:aspect-normal bg-[#2A2857] text-center md:text-left flex flex-col justify-center items-center md:items-start gap-2 md:gap-4 px-5 md:px-12 py-5 md:py-12">
                 <h1 class="font-reckless text-[clamp(3rem,8vw,5.25rem)] leading-[1.05] text-[#fffaf6] mb-4">Our Cafe
                     &<br>Wholesale Partners</h1>
-                <p class="font-figtree text-xl md:text-2xl text-[#fffaf6]/90 mb-8 max-w-lg">From local cafés to national
+                <p class="font-figtree px-5 md:px-0 text-xl md:text-2xl text-[#fffaf6]/90 mb-8 max-w-lg">From local cafés to national
                     chains, our teas power thousandas of baristas everyday.</p>
                 <a href="#"
-                    class="inline-block hover:bg-[#2a2857] hover:text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black bg-white text-black transition-all duration-300 ease">
+                    class="inline-block w-full md:w-auto hover:bg-[#2a2857] hover:text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black bg-white text-black transition-all duration-300 ease">
                     Learn More
                 </a>
             </div>
         </section>
 
         <section class="relative bg-[#9F6429] w-full py-20 md:py-28 px-5 border-b-2 border-black">
-            <div class="absolute -top-15 md:-top-20 right-6 md:right-12 z-10">
+            <div class="absolute -top-10 md:-top-14 right-6 md:right-12 z-10">
                 <img src="https://www.twoleavestea.com/cdn/shop/files/designed_for_ease.svg?v=1773116538&width=300"
                     alt="" class="h-30 w-30 md:h-40 md:w-40">
             </div>
@@ -683,7 +734,8 @@
             <h2 class="text-6xl text-center text-white font-midnight font-semibold uppercase leading-[1] mb-4">
                 Barista Blends For Every Mood
             </h2>
-            <p class="font-robotomono text-center text-white text-sm uppercase mb-40">(No Training Required)
+            <p class="font-robotomono text-center text-white text-sm uppercase mb-40">
+                (No Training Required)
             </p>
 
             <div
@@ -692,18 +744,20 @@
                 <div class="absolute h-full w-screen flex justify-between items-center px-2 md:p-12 z-10">
                     <div
                         class="h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center">
-                        <img src="./assets/svgs/left-arrow.svg" alt="" class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
+                        <img src="./assets/svgs/left-arrow.svg" alt=""
+                            class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
                     </div>
                     <div
                         class="h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center">
-                        <img src="./assets/svgs/right-arrow.svg" alt="" class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
+                        <img src="./assets/svgs/right-arrow.svg" alt=""
+                            class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
                     </div>
                 </div>
 
                 <img src="https://www.twoleavestea.com/cdn/shop/files/Nice_Chai.webp?v=1773826534&width=800" alt=""
                     class="w-[clamp(30rem,55vw,60rem)] max-w-none flex-shrink-0 translate-x-[-3rem] md:translate-x-[1rem] -translate-y-14 md:-translate-y-16">
                 <div
-                    class="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center items-center md:items-start gap-2 md:gap-4 px-8 md:px-12 -translate-y-6 -mt-14 md:-translate-y-4">
+                    class="w-full md:min-w-1/2 text-center md:text-left flex flex-col justify-center items-center md:items-start gap-2 md:gap-4 px-8 md:px-12 -translate-y-6 -mt-14 md:-translate-y-4">
                     <div class="mb-2 flex justify-center md:justify-start items-center w-full">
                         <div
                             class="inline-block text-4xl md:text-6xl font-midnight font-semibold text-black uppercase px-1 border border-black rounded-md bg-[#F09F54] -rotate-1">
@@ -712,8 +766,7 @@
                     </div>
                     <h1 class="font-reckless text-[clamp(3rem,8vw,5.25rem)] leading-[0.9] mb-2">Chai<br />Latte Mix
                     </h1>
-                    <p class="font-figtree text-md md:text-xl mb-2 max-w-md">Our Nice Chai is a not too sweet, not too
-                        spicy, powdered latte mix meant for making tea lattes simple.</p>
+                    <p class="font-figtree text-md md:text-xl mb-2 max-w-md md:pr-12">Our Nice Chai is a not too sweet, not too spicy, powdered latte mix meant for making tea lattes simple.</p>
                     <a href="#"
                         class="inline-block hover:bg-[#2a2857] hover:text-white text-lg md:text-xl px-14 py-3 rounded-full font-figtree border border-black bg-white text-black transition-all duration-300 ease">
                         Shop Now
@@ -722,7 +775,6 @@
             </div>
         </section>
 
-        <!-- JUORNAL -->
         <section class="w-full py-28 border-b-2 border-black">
             <div class="max-w-5xl mx-auto pb-12 px-6">
                 <div class="pb-6">
@@ -738,7 +790,7 @@
 
             <div class="flex gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth">
                 <div
-                    class="bg-[#C0DBFF] rounded-xl border border-black overflow-hidden flex flex-col gap-[0.75rem] w-[320px] flex-shrink-0 ml-12 group">
+                    class="bg-[#C0DBFF] rounded-xl border border-black overflow-hidden flex flex-col gap-[0.75rem] w-[320px] flex-shrink-0 group">
                     <div
                         class="relative bg-[#2A2857] flex flex-col justify-between border-b border-black overflow-hidden w-[320px] h-[320px] p-3">
                         <img src="https://www.twoleavestea.com/cdn/shop/articles/enjoy_9b280eb3-acdd-47d2-ba91-0d2f259d3d66.svg?v=1774545568&width=350"
