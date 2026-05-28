@@ -92,12 +92,12 @@ a {
     50% { transform: rotate(-1deg) translateY(-2px); }
 }
 
-.hover-scale {
+.hover-zoom {
     transition: transform 0.3s ease;
 }
 
-.hover-scale:hover {
-    transform: scale(1.03);
+.hover-zoom:hover {
+    transform: scale(1.05);
 }
 
 .scrollbar-hide::-webkit-scrollbar {
