@@ -60,36 +60,38 @@ body {
     font-family: var(--font-reckless);
 }
 
-img {
-    display: block;
-    max-width: 100%;
+.underline-effect {
+    position: relative;
+}
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: all 0.5s ease;
+}
+.underline-effect:hover::after {
+    width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.underline-effect-white {
+    position: relative;
 }
-
-/* --- Animations --- */
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.underline-effect-white::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: all 0.5s ease;
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes floatBadge {
-    0%, 100% { transform: rotate(-2deg); }
-    50% { transform: rotate(-1deg) translateY(-2px); }
+.underline-effect-white:hover::after {
+    width: 100%;
 }
 
 .hover-zoom {

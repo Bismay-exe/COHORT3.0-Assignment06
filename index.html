@@ -33,23 +33,23 @@
 
     <nav id="my-navbar"
         class="sticky top-0 z-40 h-[68px] transition-all duration-300 flex justify-between items-center bg-[#fbf9eb] shadow-lg border-b border-black px-5">
-        <div class="flex-1 hidden md:flex gap-6 text-2xl tracking-wide text-black">
+        <div class="flex-1 hidden lg:flex gap-6 text-2xl tracking-wide text-black">
             <a href="#" class="group hover:text-[#2c4021] transition">
-                Shop
+                <span class="underline-effect">Shop</span>
                 <i
                     class="ri-arrow-down-s-line inline-flex items-center justify-center w-5 h-5 text-[14px] bg-[#C0DBFF] group-hover:bg-[#FFB500] group-hover:rotate-180 transition-all duration-500 ease-in-out rounded-full border border-black"></i>
             </a>
             <a href="#" class="group hover:text-[#2c4021] transition">
-                Learn
+                <span class="underline-effect">Learn</span>
                 <i
                     class="ri-arrow-down-s-line inline-flex items-center justify-center w-5 h-5 text-[14px] bg-[#C0DBFF] group-hover:bg-[#FFB500] group-hover:rotate-180 transition-all duration-500 ease-in-out rounded-full border border-black"></i>
             </a>
             <a href="#" class="group flex items-center justify-center gap-1">
-                Reviews
+                <span class="underline-effect">Reviews</span>
                 <img src="./assets/svgs/star.svg" alt="" class="w-5 h-5 object-contain">
             </a>
         </div>
-        <div class="md:hidden flex-1    ">
+        <div class="lg:hidden flex-1    ">
             <i class="ri-menu-line text-3xl"></i>
         </div>
         <div class="center-logo text-3xl font-reckless font-bold text-[#2c4021] cursor-pointer select-none">
@@ -57,10 +57,10 @@
                 class="h-10 w-full object-cover">
         </div>
         <div class="flex gap-6 text-xl text-black uppercase flex-1 justify-end items-center">
-            <a href="#" class="hidden md:block text-xs font-robotomono tracking-wider underline-effect">My Account</a>
-            <a href="#" class="hidden md:block text-xs font-robotomono tracking-wider underline-effect">Cafe & Wholesale
+            <a href="#" class="hidden lg:block text-xs font-robotomono tracking-wider underline-effect">My Account</a>
+            <a href="#" class="hidden lg:block text-xs font-robotomono tracking-wider underline-effect">Cafe & Wholesale
                 Partners</a>
-            <a href="#" class="hidden md:block text-xs font-robotomono tracking-wider underline-effect">Tea Journals</a>
+            <a href="#" class="hidden lg:block text-xs font-robotomono tracking-wider underline-effect">Tea Journals</a>
             <a href="#" class="text-xl flex justify-center items-center relative">
                 <img src="./assets/svgs/bag.svg" alt="" class="w-8 h-8 object-contain">
                 <span
@@ -127,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="relative flex gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth">
+            <div class="relative flex gap-5 overflow-x-auto scrollbar-hide">
 
                 <div class="flex flex-col gap-[0.75rem] w-[300px] flex-shrink-0 ml-5 md:ml-12">
                     <div
@@ -742,17 +742,16 @@
             <div
                 class="relative w-full md:h-[40rem] h-full pt-8 bg-[#FFCB96] rounded-2xl border border-black flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10">
 
-                <div class="absolute h-full w-screen flex justify-between items-center px-2 md:p-12 z-10">
-                    <div
-                        class="h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center">
-                        <img src="./assets/svgs/left-arrow.svg" alt=""
-                            class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
-                    </div>
-                    <div
-                        class="h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center">
-                        <img src="./assets/svgs/right-arrow.svg" alt=""
-                            class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
-                    </div>
+                <div
+                    class="absolute top-[55%] left-2 md:left-16 h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center z-50">
+                    <img src="./assets/svgs/left-arrow.svg" alt=""
+                        class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
+                </div>
+
+                <div
+                    class="absolute top-[55%] right-2 md:right-16 h-10 w-10 md:h-14 md:w-14 rounded-full group bg-white hover:bg-[#2A2857] transition-all duration-300 cursor-pointer hover:text-white border border-black flex justify-center items-center z-50">
+                    <img src="./assets/svgs/right-arrow.svg" alt=""
+                        class="w-4 md:w-6 h-4 md:h-6 transition-all duration-300 group-hover:invert">
                 </div>
 
                 <img src="https://www.twoleavestea.com/cdn/shop/files/Nice_Chai.webp?v=1773826534&width=800" alt=""
@@ -803,7 +802,7 @@
                 </h2>
             </div>
 
-            <div class="flex gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth">
+            <div class="flex gap-5 overflow-x-auto scrollbar-hide">
                 <div
                     class="bg-[#C0DBFF] rounded-xl border border-black overflow-hidden flex flex-col gap-[0.75rem] w-[320px] flex-shrink-0 group ml-5 md:ml-12">
                     <div
@@ -1020,7 +1019,6 @@
 
     <footer class="bg-[#C0DBFF] overflow-hidden">
 
-        <!-- Top Newsletter -->
         <div class="w-full flex flex-col items-center mx-auto px-4 md:px-10 pt-14 md:pt-20">
 
             <div class="max-w-5xl w-full mb-14 flex flex-col gap-8">
@@ -1051,17 +1049,17 @@
                     <div class="flex md:justify-end gap-3">
 
                         <a href="#"
-                            class="w-14 h-14 rounded-full border border-black flex items-center justify-center text-xl hover:bg-black hover:text-white transition-all duration-300">
+                            class="w-14 h-14 rounded-full border border-black flex items-center justify-center text-xl hover:bg-[#2A2857] hover:text-white transition-all duration-300">
                             <i class="ri-facebook-fill"></i>
                         </a>
 
                         <a href="#"
-                            class="w-14 h-14 rounded-full border border-black flex items-center justify-center text-xl hover:bg-black hover:text-white transition-all duration-300">
+                            class="w-14 h-14 rounded-full border border-black flex items-center justify-center text-xl hover:bg-[#2A2857] hover:text-white transition-all duration-300">
                             <i class="ri-instagram-fill"></i>
                         </a>
 
                         <a href="#"
-                            class="w-14 h-14 rounded-full border border-black flex items-center justify-center text-xl hover:bg-black hover:text-white transition-all duration-300">
+                            class="w-14 h-14 rounded-full border border-black flex items-center justify-center text-xl hover:bg-[#2A2857] hover:text-white transition-all duration-300">
                             <i class="ri-linkedin-fill"></i>
                         </a>
 
@@ -1071,110 +1069,154 @@
 
             </div>
 
-            <!-- Desktop Footer Links -->
             <div
-                class="hidden md:grid lg:grid-cols-6 md:grid-cols-3 w-full gap-x-10 gap-y-14 bg-[#2b2962] rounded-[2rem] p-8 lg:p-10 text-white mb-20">
+                class="hidden md:flex flex-wrap w-full gap-x-10 gap-y-14 bg-[#2b2962] rounded-[2rem] p-8 lg:p-10 text-white mb-20">
 
-                <div>
+                <div class="min-w-[200px]">
                     <h3 class="font-reckless text-3xl mb-5">Tea Varieties</h3>
 
-                    <ul class="font-figtree leading-[1.4] text-white/70 text-lg flex flex-col">
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Pure
+                    <ul class="font-figtree leading-[1.4] text-white/40 text-lg flex flex-col">
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Pure
                             Matcha</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Whole Leaf Tea
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Whole Leaf
+                            Tea
                             Sachets</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Tea Lattes</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Iced Tea</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Tea
+                            Lattes</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Iced
+                            Tea</a>
                     </ul>
                 </div>
 
-                <div>
+                <div class="min-w-[200px]">
                     <h3 class="font-reckless text-3xl mb-5">Collections</h3>
 
-                    <ul class="font-figtree leading-[1.4] text-white/70 text-lg flex flex-col">
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Matcha</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Chai</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Organic
-                            Tea</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Naked
-                            Sachets</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Black Tea</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Green Tea</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Herbal Tea</a>
+                    <ul class="font-figtree leading-[1.4] text-white/40 text-lg flex flex-col">
                         <a href="#"
-                            class="hover:text-white transition-all duration-300 underline-effect">Caffeine-Free</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Gift &
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Matcha</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Chai</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Organic
+                            Tea</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Naked
+                            Sachets</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Black
+                            Tea</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Green
+                            Tea</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Herbal
+                            Tea</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Caffeine-Free</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Gift &
                             Samplers</a>
                     </ul>
                 </div>
 
-                <div>
+                <div class="min-w-[200px]">
                     <h3 class="font-reckless text-3xl mb-5">Lattes</h3>
 
-                    <ul class="font-figtree leading-[1.4] text-white/70 text-lg flex flex-col">
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Nice
+                    <ul class="font-figtree leading-[1.4] text-white/40 text-lg flex flex-col">
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Nice
                             Matcha</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Barista
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Barista
                             Matcha</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Nice Chai</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Barista
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Nice
                             Chai</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Two Roots
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Barista
+                            Chai</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Two Roots
                             Golden Latte</a>
                     </ul>
                 </div>
 
-                <div>
+                <div class="min-w-[200px]">
                     <h3 class="font-reckless text-3xl mb-5">Learn</h3>
 
-                    <ul class="font-figtree leading-[1.4] text-white/70 text-lg flex flex-col">
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Our Story</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Our Spirit</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">FAQ</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Reviews</a>
+                    <ul class="font-figtree leading-[1.4] text-white/40 text-lg flex flex-col">
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Our
+                            Story</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Our
+                            Spirit</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">FAQ</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Reviews</a>
                     </ul>
                 </div>
 
-                <div>
+                <div class="min-w-[200px]">
                     <h3 class="font-reckless text-3xl mb-5">Tea Journal</h3>
 
-                    <ul class="font-figtree leading-[1.4] text-white/70 text-lg flex flex-col">
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">All
-                            Articles</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Tea 101</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Recipes</a>
+                    <ul class="font-figtree leading-[1.4] text-white/40 text-lg flex flex-col">
                         <a href="#"
-                            class="hover:text-white transition-all duration-300 underline-effect">Sustainability</a>
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">All
+                            Articles</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Tea
+                            101</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Recipes</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Sustainability</a>
                     </ul>
                 </div>
 
-                <div>
+                <div class="min-w-[200px]">
                     <h3 class="font-reckless text-3xl mb-5">Support</h3>
 
-                    <ul class="font-figtree leading-[1.4] text-white/70 text-lg flex flex-col">
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Contact</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">My Account</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Loyal-Tea</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Shipping &
+                    <ul class="font-figtree leading-[1.4] text-white/40 text-lg flex flex-col">
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Contact</a>
+                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect-white w-fit">My
+                            Account</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Loyal-Tea</a>
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Shipping &
                             Returns</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Privacy
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Privacy
                             Policy</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Terms &
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Terms &
                             Conditions</a>
                     </ul>
                 </div>
 
-                <div>
+                <div class="flex-1 min-w-[250px]">
                     <h3 class="font-reckless text-3xl mb-5">Cafe & Wholesale Partners</h3>
 
-                    <ul class="font-figtree leading-[1.4] text-white/70 text-lg flex flex-col">
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Cafe &
+                    <ul class="font-figtree leading-[1.4] text-white/40 text-lg flex flex-col">
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Cafe &
                             Wholesale Partners</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Wholesale
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Wholesale
                             Login</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Product and
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Product
+                            and
                             Media Files</a>
-                        <a href="#" class="hover:text-white transition-all duration-300 underline-effect">Displays &
+                        <a href="#"
+                            class="hover:text-white transition-all duration-300 underline-effect-white w-fit">Displays &
                             Starter Kits</a>
                     </ul>
                 </div>
@@ -1185,9 +1227,8 @@
 
                 <div class="space-y-2.5 py-3">
 
-                    <!-- Item -->
                     <div class="border-b border-white/20 pb-2.5 flex justify-between items-center">
-                        <h3 class="text-[2rem]">Tea Varieties</h3>
+                        <h3 class="text-[2rem] text-[#FBF9EB]">Tea Varieties</h3>
 
                         <button
                             class="w-7 h-7 rounded-full bg-[#d7e7ff] text-black flex items-center justify-center text-xl">
@@ -1196,7 +1237,7 @@
                     </div>
 
                     <div class="border-b border-white/20 pb-2.5 flex justify-between items-center">
-                        <h3 class="text-[2rem]">Collections</h3>
+                        <h3 class="text-[2rem] text-[#FBF9EB]">Collections</h3>
 
                         <button
                             class="w-7 h-7 rounded-full bg-[#d7e7ff] text-black flex items-center justify-center text-xl">
@@ -1205,7 +1246,7 @@
                     </div>
 
                     <div class="border-b border-white/20 pb-2.5 flex justify-between items-center">
-                        <h3 class="text-[2rem]">Lattes</h3>
+                        <h3 class="text-[2rem] text-[#FBF9EB]">Lattes</h3>
 
                         <button
                             class="w-7 h-7 rounded-full bg-[#d7e7ff] text-black flex items-center justify-center text-xl">
@@ -1214,7 +1255,7 @@
                     </div>
 
                     <div class="border-b border-white/20 pb-2.5 flex justify-between items-center">
-                        <h3 class="text-[2rem]">Learn</h3>
+                        <h3 class="text-[2rem] text-[#FBF9EB]">Learn</h3>
 
                         <button
                             class="w-7 h-7 rounded-full bg-[#d7e7ff] text-black flex items-center justify-center text-xl">
@@ -1223,7 +1264,7 @@
                     </div>
 
                     <div class="border-b border-white/20 pb-2.5 flex justify-between items-center">
-                        <h3 class="text-[2rem]">Tea Journal</h3>
+                        <h3 class="text-[2rem] text-[#FBF9EB]">Tea Journal</h3>
 
                         <button
                             class="w-7 h-7 rounded-full bg-[#d7e7ff] text-black flex items-center justify-center text-xl">
@@ -1232,7 +1273,7 @@
                     </div>
 
                     <div class="border-b border-white/20 pb-2.5 flex justify-between items-center">
-                        <h3 class="text-[2rem]">Support</h3>
+                        <h3 class="text-[2rem] text-[#FBF9EB]">Support</h3>
 
                         <button
                             class="w-7 h-7 rounded-full bg-[#d7e7ff] text-black flex items-center justify-center text-xl">
@@ -1241,7 +1282,7 @@
                     </div>
 
                     <div class="flex justify-between items-center">
-                        <h3 class="text-[2rem]">Cafe & Wholesale Partners</h3>
+                        <h3 class="text-[2rem] text-[#FBF9EB]">Cafe & Wholesale Partners</h3>
 
                         <button
                             class="w-7 h-7 rounded-full bg-[#d7e7ff] text-black flex items-center justify-center text-xl">
